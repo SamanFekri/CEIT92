@@ -25,6 +25,7 @@ export default {
   async asyncData({$axios}) {
     let res = await $axios.get("/api/students");
     let students = [];
+    console.log(res)
     if (res.status !== 200) {
       console.log(res)
       return
