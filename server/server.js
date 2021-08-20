@@ -79,17 +79,17 @@ app.get('/students/all', async (req, res) => {
   res.json(result);
 })
 
-app.get('/assign/:texter_id/:student_id', async (req, res) => {
-  let student = await Students.findById(req.params.student_id);
-  student.user_id = req.params.texter_id;
-  let user = new Users({
-    _id: student.user_id,
-    name: `${student.first_name} ${student.last_name}`
-  })
-  await user.save();
-  await student.save();
-  res.json({student, user});
-})
+// app.get('/assign/:texter_id/:student_id', async (req, res) => {
+//   let student = await Students.findById(req.params.student_id);
+//   student.user_id = req.params.texter_id;
+//   let user = new Users({
+//     _id: student.user_id,
+//     name: `${student.first_name} ${student.last_name}`
+//   })
+//   await user.save();
+//   await student.save();
+//   res.json({student, user});
+// })
 //////////////////////////////////
 
 export default app
