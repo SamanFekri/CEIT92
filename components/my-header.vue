@@ -8,12 +8,10 @@
 
 <script>
 export default {
-  name: "header",
+  name: "my-header",
   methods: {
-    changePage() {
-      if(this.$route.path !== '/') {
-        this.$router.push('/')
-      }
+    async changePage() {
+      await this.$router.push(`/`)
     }
   }
 }

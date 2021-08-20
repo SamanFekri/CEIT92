@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full min-w-screen min-h-screen bg-cover bg-no-repeat bg-ceit-92 bg-fixed">
-    <Header/>
+    <my-header/>
     <profile-card
       :name="profile.name"
       :student_id="profile.id"
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Header from '~/components/Header';
+import Header from '~/components/my-header';
 import ProfileCard from '~/components/profile-card';
 import Post from '~/components/post';
 export default {

@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full min-w-screen min-h-screen bg-cover bg-no-repeat bg-ceit-92 bg-fixed">
-    <Header/>
+    <my-header/>
     <div class="flex flex-row-reverse flex-wrap justify-center mt-8 mb-0 w-10/12 mx-auto">
       <div v-for="student in students" class="md:w-1/5 w-full mb-8">
         <profile-item
@@ -15,10 +15,12 @@
 
 <script>
 import ProfileItem from '~/components/profile-item';
+import Header from '~/components/my-header';
 
 export default {
   components: {
     ProfileItem,
+    Header
   },
   async asyncData({$axios}) {
     let res = await $axios.get("/api/students");
