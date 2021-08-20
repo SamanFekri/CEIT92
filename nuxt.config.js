@@ -48,7 +48,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: '0.0.0.0:3000'
+    baseURL: 'http://0.0.0.0:3000'
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
