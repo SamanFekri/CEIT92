@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import Header from '~/components/Header';
-import ProfileCard from '~/components/profile-card';
-import Post from '~/components/post';
+import Header from '../components/Header';
+import ProfileCard from '../components/profile-card';
+import Post from '../components/post';
 export default {
   name: "student",
   components: {
