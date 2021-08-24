@@ -48,7 +48,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://ceit92.ir'
+    baseURL: 'https://ceit92.ir'
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
