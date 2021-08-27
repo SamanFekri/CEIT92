@@ -9,7 +9,7 @@ const Model = new Schema({
   last_name: String,
   sex: String,
   order: String,
-  photo: String,
+  pic: String,
   user_id: { type: Schema.Types.ObjectId, ref: "User" },
 }, {strict: false});
 

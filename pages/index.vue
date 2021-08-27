@@ -34,8 +34,8 @@ export default {
       let student = {};
       student.name = `${res.data[i].first_name} ${res.data[i].last_name}`;
       student.id = res.data[i].username;
-      if(res.data[i].photo) {
-        student.image = res.data[i].photo;
+      if(res.data[i].pic) {
+        student.image = res.data[i].pic;
       } else {
         student.image = 'https://image.flaticon.com/icons/png/512/3829/3829769.png';
       }

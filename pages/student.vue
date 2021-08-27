@@ -49,8 +49,8 @@ export default {
 
     profile.name = `${res.data.first_name} ${res.data.last_name}`;
     profile.id = res.data.username;
-    if(res.data.photo) {
-      profile.image = res.data.photo;
+    if(res.data.pic) {
+      profile.image = res.data.pic;
     } else {
       profile.image = 'https://image.flaticon.com/icons/png/512/3829/3829769.png';
     }
