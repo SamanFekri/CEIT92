@@ -2,7 +2,7 @@
   <div class="w-full h-full min-w-screen min-h-screen bg-cover bg-no-repeat bg-ceit-92 bg-fixed">
     <my-header/>
     <div class="flex flex-row-reverse flex-wrap justify-center mt-8 mb-0 w-10/12 mx-auto">
-      <div v-for="student in students" class="md:w-1/5 w-full mb-8">
+      <div v-for="student in students" class="lg:w-1/5 md:w-1/4 w-full mb-8">
         <profile-item
           :name="student.name"
           :profile_image="student.image"
